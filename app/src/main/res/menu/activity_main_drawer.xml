@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_calories"
+            android:icon="@drawable/ic_menu_calories"
+            android:title="Calorie Counter" />
+        <item
+            android:id="@+id/nav_bmi"
+            android:icon="@drawable/ic_menu_bmi"
+            android:title="BMI Calculator" />
+        <item
+            android:id="@+id/nav_water"
+            android:icon="@drawable/ic_menu_water"
+            android:title="Water Counter" />
+        <item
+            android:id="@+id/nav_exercise"
+            android:icon="@drawable/ic_menu_exercise"
+            android:title="Exercise" />
+    </group>
+
+</menu>
