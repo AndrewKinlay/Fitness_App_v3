@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ie.itb.andrewshaneshaun.fitness_app_v3.bmiActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BMI Calculator"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/numWeight"
+        android:layout_alignTop="@+id/lblWeight"
+        android:layout_toRightOf="@+id/lblHeight"
+        android:editable="false"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblWeight"
+        android:text="Weight in lbs:"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/lblHeight"
+        android:layout_alignEnd="@+id/lblHeight"
+        android:editable="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblHeight"
+        android:text="Height in inches:"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/numWeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:editable="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/numHeight"
+        android:layout_alignTop="@+id/lblHeight"
+        android:layout_alignLeft="@+id/numWeight"
+        android:layout_alignStart="@+id/numWeight"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:id="@+id/btnCalc"
+        android:onClick="calcOnClick"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/lblHeight"
+        android:layout_alignEnd="@+id/lblHeight" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/areaBMI"
+        android:editable="false"
+        android:elegantTextHeight="false"
+        android:layout_alignBottom="@+id/btnCalc"
+        android:layout_alignLeft="@+id/numHeight"
+        android:layout_alignStart="@+id/numHeight"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/areaAbout"
+        android:layout_marginTop="37dp"
+        android:editable="false"
+        android:textAlignment="center"
+        android:layout_below="@+id/areaBMI"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgFace"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/areaBMI"
+        android:layout_alignEnd="@+id/areaBMI"
+        android:layout_below="@+id/areaAbout"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+</RelativeLayout>
